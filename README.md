@@ -3,9 +3,11 @@
 Homebrew tap for my apps.
 
 ```sh
-brew trust arcester/tap   # recent Homebrew asks you to trust third-party taps
-brew install --cask arcester/tap/<name>
+brew trust arcester/tap && brew install --cask arcester/tap/<name>
 ```
+
+`brew trust` lets Homebrew install apps from this tap; recent Homebrew versions require it for
+third-party taps. All apps are signed with Developer ID and notarized by Apple.
 
 | Cask | Description |
 |------|-------------|
